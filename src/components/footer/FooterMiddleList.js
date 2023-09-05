@@ -1,0 +1,21 @@
+import React from 'react'
+
+const FooterMiddleList = ({title,listitem}) => {
+  return (
+    <div>
+      <h3 className='font-titleFont text-white text-base font-semibold mb-3'>{title}</h3>
+
+      <ul className='flex flex-col gap-2 font-bodyFont  text-xs'> 
+
+      {listitem.map((item)=>{
+       return item.listdata.map((data)=><li className='listHover'>{data}</li> )
+      })}
+
+      </ul>
+     
+   
+    </div>
+  )
+}
+
+export default FooterMiddleList
