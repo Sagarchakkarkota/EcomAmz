@@ -26,11 +26,8 @@ const Products = () => {
                 {data.map((item) => {
                     return <div className='bg-white h-auto border-[1px] py-6 z-30 shadow-none border-gray-200
                 hover:border-transparent hover:shadow-testShadow duration-200 flex flex-col relative'>
-                    // {/* categories start */}
-                    //     <span className='absolute top-0 right-0  italic text-gray-400'>Electronics</span>
-                    //      {/* categories end */}
-
-                          {/* image start */}
+            
+                       {/* image start */}
                         <div className=' w-full h-auto flex items-center justify-center group relative  '>
                             <img className='w-52 h-64' src={item.image} alt="image" />
                             <ul className='bg-gray-100 w-full h-36 absolute -bottom-[153px] flex flex-col
